@@ -25,7 +25,7 @@ public class DemoA {
 
             for (Node.Edge edge : n.neighbors) {
                 Node m = edge.node; // xet cac nut con
-                double totalWeight = n.g + edge.weight; // gia tri h cua nút con
+                double totalWeight = n.g + edge.weight; // gia tri tong g cua cac nút
 
                 if (!openList.contains(m) && !closedList.contains(m)) { // nêu chua có trong hang doi thì cho vào hang doi
                     m.parent = n;
